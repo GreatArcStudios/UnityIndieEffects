@@ -11,7 +11,7 @@ But where’s the motion blur you ask? Unfortunately, an improvement in performa
 Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly as it was anymore! Now, let’s get started:
 <ul>
 <li>First, open the project you are going to use these FX in, then extract the IndieEffects.zip to your assets folder. This can be done in windows by opening the .zip, then clicking “extract all files” at the top.</li>
-<li>Once Unity finishes importing the package, go to your main camera, and click “Add Component” then browse to the newly created “Indie Effects” section, then add an effect of your choice. To use motion blur, add the base script, then enable motion blur. For other FX, these auto-add the base script automatically, if it isn’t there already.</li>
+<li>Once Unity finishes importing the package, go to your main camera, and click “Add Component” then browse to the newly created “Indie Effects” section, then add an effect of your choice. <del>To use motion blur, add the base script, then enable motion blur.</del> For other FX, these auto-add the base script automatically, if it isn’t there already.</li>
 <li>If you want to tweak your newly added FX, then head to the “Tweaking” section of this doc for details, otherwise skip this step.</li>
 <li>To use some fx, you will need to tick the checkbox marked “DNRequire” mainly for DoF</li>
 <li>Click play to preview. Behold… YOUR NEW FX!</li>
