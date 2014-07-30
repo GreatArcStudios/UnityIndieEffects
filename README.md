@@ -22,8 +22,10 @@ Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly a
 <b>Examples of effects (more to come): </b>
 ![iFx](http://i.imgur.com/do1EofT.png "iFx")
 
-Advanced:
-When writing your own effects for my Indie Effects API (yes, I have added a small API to this package) you will need knowledge of the functions contained within.
+<h3>Custom Image Effects:<h3>
+![iFx](http://i.imgur.com/ncq0KXI.png "iFx")
+
+When writing your own effects for Indie Effects API you will need knowledge of the functions contained within.
 
 For a basic view of how a script interfacing to this API should work, here is a basic template for any “indie effect” (you can use this as a base if you like!) Copy and paste this code into a new JavaScript, then tweak it however you like:
 
@@ -57,6 +59,7 @@ Javascript example:
 ```
 C# example:
 
+<i> note the c# version still needs to be ported.</i>
 ```csharp
 
   using IndieEffects;
@@ -116,11 +119,10 @@ Effects Included in the package:
 <li>	This effect has two sliders – A blurring slider and an F-Stop. Adjust the values to get the desired effect. This effect now culls trees and other transparent objects better.</li>
 <li>	A nice toon outline for games where using multiple toon variants isn’t feasible. To make the lines either thicker or thinner, set intensity to anything other than 0. Having it at 0 gives a black screen which kinda defeats the purpose, so it isn’t recommended you do this!</li>
 <li>Chromatic Abberation: A brand-new vignetting/chroma effect I wrote when I got bored. Make your games go HIIIGH, with this sick-as effect!</li>
-
-======
+<hr></hr>
 <b><h3>Help:</h3></b>
 
-<p>If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread] (http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/page-16 "Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think I could do. There are lots of suggestions being posted all the time)</p>
+If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/page-16"Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think I could do. There are lots of suggestions being posted all the time)
 Coming soon:
 Various bloom fx, to spruce up scenes. Thanks to FrostBite23 for offering to port them!
 Sun shafts effect. Again, thank Frosty!
@@ -128,6 +130,7 @@ Cyrien5100, for helping out with SSAO. FrostBite23 now has a new SSAO coming as 
 
 Credits:
 Main Project Lead: FuzzyQuills
+
 
 
 Colour Balance Script provided by Tryder.
@@ -140,4 +143,4 @@ All of the community, for giving my thread the best feedback, including inspirat
 Cyrien5100 and related users for their dedication to the creation of the SSAO effect!
 0tacun, for several contributions and ideas, example: outline effect.
 FrostBite23, for porting a bunch of dirty lens effects and other nice eye-candy.
-Eric2241, for helping support the project! He also is to thank for other fx found on the thread!
+Eric2241, for helping support the project, hosting and maintaing the GitHub repo! He also is to thank for other fx found on the thread!
