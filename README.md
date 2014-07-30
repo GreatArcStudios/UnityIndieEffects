@@ -27,6 +27,7 @@ Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly a
 
 When writing your own effects for Indie Effects API you will need knowledge of the functions contained within.
 
+
 For a basic view of how a script interfacing to this API should work, here is a basic template for any “indie effect” (you can use this as a base if you like!) Copy and paste this code into a new JavaScript, then tweak it however you like:
 
 Javascript example:
@@ -122,7 +123,7 @@ Effects Included in the package:
 <hr></hr>
 <b><h3>Help:</h3></b>
 
-If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/page-16"Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think I could do. There are lots of suggestions being posted all the time)
+If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/page-16"Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think FuzzyQuills could do. There are lots of suggestions being posted all the time)
 Coming soon:
 Various bloom fx, to spruce up scenes. Thanks to FrostBite23 for offering to port them!
 Sun shafts effect. Again, thank Frosty!
@@ -131,9 +132,7 @@ Cyrien5100, for helping out with SSAO. FrostBite23 now has a new SSAO coming as 
 Credits:
 Main Project Lead: FuzzyQuills
 
-
-
-Colour Balance Script provided by Tryder.
+Color Balance Script provided by Tryder.
 Bloom script written by me. Base Bloom shader provided by Tryder, and tweaked by me.
 
 Special Thanks:
@@ -143,4 +142,4 @@ All of the community, for giving my thread the best feedback, including inspirat
 Cyrien5100 and related users for their dedication to the creation of the SSAO effect!
 0tacun, for several contributions and ideas, example: outline effect.
 FrostBite23, for porting a bunch of dirty lens effects and other nice eye-candy.
-Eric2241, for helping support the project, hosting and maintaing the GitHub repo! He also is to thank for other fx found on the thread!
+Eric2241, for helping support the project, hosting and maintaing the GitHub repo! He also the one  to thank for other fx found on page 13-14 of the thread!
