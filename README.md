@@ -19,5 +19,121 @@ Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly a
 <li>Click play to preview. Behold… YOUR NEW FX!</li>
 </ul>
 
-<b>Examples of effects: </b>
+<b>Examples of effects (more to come): </b>
 ![iFx](http://i.imgur.com/do1EofT.png "iFx")
+
+Advanced:
+When writing your own effects for my Indie Effects API (yes, I have added a small API to this package) you will need knowledge of the functions contained within.
+
+For a basic view of how a script interfacing to this API should work, here is a basic template for any “indie effect” (you can use this as a base if you like!) Copy and paste this code into a new JavaScript, then tweak it however you like:
+
+Javascript example:
+
+```Javascript
+	#pragma strict
+	@script RequireComponent(IndieEffects)
+	@script AddComponentMenu(“Indie Effects/FX Skeleton”)
+
+	Import IndieEffects;
+	var fxRes : IndieEffects;
+
+	private var mat : Material;
+	var shader : Shader;
+
+	function Start () {
+		fxRes = GetComponent(IndieEffects);
+		mat : new Material(shader);
+	}
+
+	function Update () {
+		mat.SetTexture(“_MainTex”, fxRes.RT);
+		//if your effect doesn’t use depth buffer, comment this out
+		mat.SetTexture(“_Depth”, fxRes.DNBuffer);
+	}
+
+	function OnPostRender () {
+		FullScreenQuad(mat);
+	}
+```
+C# example:
+
+```Java
+
+  using IndieEffects;
+  
+  [RequireComponent(IndieEffects)]
+  [AddComponentMenu(“Indie Effects/FX Skeleton”)]
+  public class ExampleEffect : MonoBehaviour {
+    private Material mat;
+    public Shader shader;
+    public IndieEffects fxRes;
+    
+    void Start (){
+      fxRes = GetComponent(IndieEffects);
+      mat = new Material(shader);
+    }
+    
+    void Update (){
+      mat.SetTexture(“_MainTex”, fxRes.RT);
+	  	//if your effect doesn’t use depth buffer, comment this out
+		  mat.SetTexture(“_Depth”, fxRes.DNBuffer);
+    }
+    
+    void OnPostRender (){
+      fxRes.FullScreenQuad(mat);
+    }
+    
+  }
+```
+
+
+When using effects with depth buffer, use the variable DNBuffer in the base script to assign to the shader. It is also possible to remove the @script lines up top for a performance boost, but it is not recommended you do this until final build time.
+
+Effects Included in the package:
+<ol>
+<li>Fisheye (adapted from the Unity Pro Fisheye effect)</li>
+<li>	Simply adjust the X and Y values to get the fisheye. DO NOT USE NEGATIVE VALUES!!!</li>
+<li>Negative (this reverses colour)</li>
+<li>	A drag ‘n’ drop effect. Reverses and distorts color.</li>
+<li>	Anti-Aliasing (Ported From Unity Pro)</li>
+<li>	A port of the FXAA shaders from Unity Pro! Simply adjust the settings to your liking, or pick the FXAAPresetB or A for smoothest Plug ‘n’ Play result!</li>
+<li>	Vignetting (may darken screen too much, so use sparingly)</li>
+<li>	Simply adjust the value, then set the vignette texture. Some textures are included for you to experiment.</li>
+
+
+
+<li>	Radial Blur/God Rays (God rays deprecated. A new effect is going to be made soon that uses gameObject origin instead. I suggest sticking with radial blur only!)</li>
+<li>	Adjust the values carefully, and make sure Radial Blur is selected, otherwise the screen will be FLOODED with sunlight!</li>
+<li>	Colour Balance (A nice colour adjustment script for your games)</li>
+<li>	Simply adjust the values. Note the script is reported to be not working in the latest version of unity 4. </li>
+<li>	Image Bloom (a new bloom effect from my labs)</li>
+<li>	This bloom effect uses a new and improved blurring algorithm, and looks real nice.</li>
+<li>	Blur (based on the Image Bloom)</li>
+<li>	Adjust the slider (or integer, don’t remember what I set…) to blur the scene</li>
+<li>	SSAO:
+<li>	A new SSAO implementation without needing a blur pass! This implementation uses the Bunell disk algorithm. For best results, I recommend setting the strength to 2. If you wish, feel free to fiddle with the other settings!</li>
+<li>	DoF (A nice thing to add, er, depth to the scene!)</li>
+<li>	This effect has two sliders – A blurring slider and an F-Stop. Adjust the values to get the desired effect. This effect now culls trees and other transparent objects better.</li>
+<li>	A nice toon outline for games where using multiple toon variants isn’t feasible. To make the lines either thicker or thinner, set intensity to anything other than 0. Having it at 0 gives a black screen which kinda defeats the purpose, so it isn’t recommended you do this!</li>
+<li>Chromatic Abberation: A brand-new vignetting/chroma effect I wrote when I got bored. Make your games go HIIIGH, with this sick-as effect!</li>
+Help:
+If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on my thread Here if you like to help other users or want to give credit! (Or even suggest a new effect you think I could do. There are lots of suggestions being posted all the time)
+Coming soon:
+Various bloom fx, to spruce up scenes. Thanks to FrostBite23 for offering to port them!
+Sun shafts effect. Again, thank Frosty!
+Cyrien5100, for helping out with SSAO. FrostBite23 now has a new SSAO coming as well.
+
+Credits:
+Main Project Lead: FuzzyQuills
+
+Colour Balance Script provided by Tryder.
+Bloom script written by me. Base Bloom shader provided by Tryder, and tweaked by me.
+
+Special Thanks:
+Tryder, for the colour balance script and the base bloom shader.
+Unity Technologies, for giving us the most epic game engine ever!
+All of the community, for giving my thread the best feedback, including inspiration for depth of field!
+Cyrien5100 and related users for their dedication to the creation of the SSAO effect!
+0tacun, for several contributions and ideas, example: outline effect.
+FrostBite23, for porting a bunch of dirty lens effects and other nice eye-candy.
+Eric2241, for helping support the project! He also is to thank for other fx found on the thread!
