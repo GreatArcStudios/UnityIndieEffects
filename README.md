@@ -1,4 +1,4 @@
-<title> Unity Indie Effects </title>
+<h1> Unity Indie Effects </h1>
 
 =================
 
