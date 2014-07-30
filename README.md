@@ -106,20 +106,20 @@ Effects Included in the package:
 
 
 
-<li>	Radial Blur/God Rays (God rays deprecated. A new effect is going to be made soon that uses gameObject origin instead. I suggest sticking with radial blur only!)</li>
+<li>	Radial Blur/God Rays (God rays deprecated. A new effect is going to be made soon that uses gameObject origin instead. FuzzyQuills suggests sticking with radial blur only!)</li>
 <li>	Adjust the values carefully, and make sure Radial Blur is selected, otherwise the screen will be FLOODED with sunlight!</li>
 <li>	Colour Balance (A nice colour adjustment script for your games)</li>
 <li>	Simply adjust the values. Note the script is reported to be not working in the latest version of unity 4. </li>
 <li>	Image Bloom (a new bloom effect from my labs)</li>
 <li>	This bloom effect uses a new and improved blurring algorithm, and looks real nice.</li>
 <li>	Blur (based on the Image Bloom)</li>
-<li>	Adjust the slider (or integer, don’t remember what I set…) to blur the scene</li>
+<li>	Adjust the slider to blur the scene</li>
 <li>	SSAO:
 <li>	A new SSAO implementation without needing a blur pass! This implementation uses the Bunell disk algorithm. For best results, I recommend setting the strength to 2. If you wish, feel free to fiddle with the other settings!</li>
 <li>	DoF (A nice thing to add, er, depth to the scene!)</li>
 <li>	This effect has two sliders – A blurring slider and an F-Stop. Adjust the values to get the desired effect. This effect now culls trees and other transparent objects better.</li>
 <li>	A nice toon outline for games where using multiple toon variants isn’t feasible. To make the lines either thicker or thinner, set intensity to anything other than 0. Having it at 0 gives a black screen which kinda defeats the purpose, so it isn’t recommended you do this!</li>
-<li>Chromatic Abberation: A brand-new vignetting/chroma effect I wrote when I got bored. Make your games go HIIIGH, with this sick-as effect!</li>
+<li>Chromatic Abberation: A brand-new vignetting/chroma effect. Make your games go HIIIGH, with this sick-as effect!</li>
 <hr></hr>
 <b><h3>Help:</h3></b>
 
