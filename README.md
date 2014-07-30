@@ -19,4 +19,5 @@ Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly a
 <li>Click play to preview. Behold… YOUR NEW FX!</li>
 </ul>
 
-<b>Examples: </b>
+<b>Examples of effects: </b>
+![iFx](http://i.imgur.com/do1EofT.png "iFx")
