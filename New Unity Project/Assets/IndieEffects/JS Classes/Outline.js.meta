@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 88133e6f936dcd14ea89d09cf7b348ce
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - IndieEffects: {instanceID: 0}
+  - outlineShader: {fileID: 4800000, guid: 63264b350dbdf5740b240c8b0f2b670e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

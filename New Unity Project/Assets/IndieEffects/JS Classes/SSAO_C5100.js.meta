@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 20f64ad632e757c4d9384ff9ff244d05
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fxRes: {instanceID: 0}
+  - mainTex: {instanceID: 0}
+  - depthTex: {instanceID: 0}
+  - randTex: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+  - materialAO: {instanceID: 0}
+  - shaderAO: {fileID: 4800000, guid: 3caf2adb0ea6aac489e370ceaabad376, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

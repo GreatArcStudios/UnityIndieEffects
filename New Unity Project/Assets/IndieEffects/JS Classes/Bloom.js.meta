@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 135435bee3024944f9c8d1796b6217d0
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fxRes: {instanceID: 0}
+  - bloomShader: {fileID: 4800000, guid: 6f7e70ff552d55b449e19249f2034cd0, type: 3}
+  - newTex: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

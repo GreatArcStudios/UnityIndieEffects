@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 0ebe6c89b69068547b684621d182b23b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fxRes: {instanceID: 0}
+  - shader: {fileID: 4800000, guid: 900ed230f65497a469a310482a7a040c, type: 3}
+  - vignette: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
