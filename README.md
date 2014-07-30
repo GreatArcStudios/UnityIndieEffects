@@ -136,10 +136,12 @@ Color Balance Script provided by Tryder.
 Bloom script written by me. Base Bloom shader provided by Tryder, and tweaked by me.
 
 Special Thanks:
-Tryder, for the colour balance script and the base bloom shader.
-Unity Technologies, for giving us the most epic game engine ever!
-All of the community, for giving my thread the best feedback, including inspiration for depth of field!
-Cyrien5100 and related users for their dedication to the creation of the SSAO effect!
-0tacun, for several contributions and ideas, example: outline effect.
-FrostBite23, for porting a bunch of dirty lens effects and other nice eye-candy.
-Eric2241, for helping support the project, hosting and maintaing the GitHub repo! He also the one  to thank for other fx found on page 13-14 of the thread!
+<ul>
+<li>Tryder, for the colour balance script and the base bloom shader.</li>
+<li>Unity Technologies, for giving us the most epic game engine ever!</li>
+<li>All of the community, for giving my thread the best feedback, including inspiration for depth of field!</li>
+<li>Cyrien5100 and related users for their dedication to the creation of the SSAO effect!</li>
+<li>0tacun, for several contributions and ideas, example: outline effect.</li>
+<li>FrostBite23, for porting a bunch of dirty lens effects and other nice eye-candy.</li>
+<li>Eric2241, for helping support the project, hosting and maintaing the GitHub repo! He also the one  to thank for other fx found on page 13-14 of the thread!</li>
+</ul>
