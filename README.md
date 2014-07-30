@@ -1,5 +1,7 @@
 <h1> Unity Indie Effects </h1>
 
+![iFx](http://i.imgur.com/0VxIOeL.png "iFx")
+
 <h2> <b>True Image Effects for Unity free</b> </h2>
 
 <h3> <i style="color:blue"> Introduction: </i> </h3>
@@ -16,4 +18,5 @@ Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly a
 <li>To use some fx, you will need to tick the checkbox marked “DNRequire” mainly for DoF</li>
 <li>Click play to preview. Behold… YOUR NEW FX!</li>
 </ul>
-Some examples are shown here:
+
+<b>Examples: </b>
