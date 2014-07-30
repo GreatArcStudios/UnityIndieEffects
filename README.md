@@ -57,7 +57,7 @@ Javascript example:
 ```
 C# example:
 
-```Java
+```csharp
 
   using IndieEffects;
   
@@ -116,8 +116,11 @@ Effects Included in the package:
 <li>	This effect has two sliders – A blurring slider and an F-Stop. Adjust the values to get the desired effect. This effect now culls trees and other transparent objects better.</li>
 <li>	A nice toon outline for games where using multiple toon variants isn’t feasible. To make the lines either thicker or thinner, set intensity to anything other than 0. Having it at 0 gives a black screen which kinda defeats the purpose, so it isn’t recommended you do this!</li>
 <li>Chromatic Abberation: A brand-new vignetting/chroma effect I wrote when I got bored. Make your games go HIIIGH, with this sick-as effect!</li>
-Help:
-If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on my thread Here if you like to help other users or want to give credit! (Or even suggest a new effect you think I could do. There are lots of suggestions being posted all the time)
+
+======
+<b><h3>Help:</h3></b>
+
+<p>If you want to make a comment, give credit, or need help with this, you can email me at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread] (http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/page-16 "Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think I could do. There are lots of suggestions being posted all the time)</p>
 Coming soon:
 Various bloom fx, to spruce up scenes. Thanks to FrostBite23 for offering to port them!
 Sun shafts effect. Again, thank Frosty!
@@ -125,6 +128,7 @@ Cyrien5100, for helping out with SSAO. FrostBite23 now has a new SSAO coming as 
 
 Credits:
 Main Project Lead: FuzzyQuills
+
 
 Colour Balance Script provided by Tryder.
 Bloom script written by me. Base Bloom shader provided by Tryder, and tweaked by me.
