@@ -72,7 +72,7 @@ Shader "IndieEffects/CameraMotionBlur"{
 				// Use this frame's position and last frame's to compute the pixel
 				// velocity.
 				_intensity = clamp(_intensity , 0.0 , 1.0);
-				float2 velocity = (currentPos - previousPos)*_intensity;
+				float2 velocity = -(currentPos - previousPos)*_intensity;
 			   
  
 			   
