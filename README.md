@@ -32,7 +32,7 @@ For a basic view of how a script interfacing to this API should work, here is a 
 
 Javascript example:
 
-```Javascript
+```javascript
 	#pragma strict
 	@script RequireComponent(IndieEffects)
 	@script AddComponentMenu(“Indie Effects/FX Skeleton”)
