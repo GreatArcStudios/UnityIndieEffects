@@ -123,13 +123,15 @@ Effects Included in the package:
 <hr></hr>
 <b><h3>Help:</h3></b>
 
-If you want to make a comment, give credit, or need help with this, you can email FuzzyQuills at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/page-16"Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think FuzzyQuills could do. There are lots of suggestions being posted all the time)
+If you want to make a comment, give credit, or need help with this, you can email FuzzyQuills at neubot321@gmail.com. You can also post on the Indie Effects thread at [Indie Effects Thread](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/"Indie Effects Thread")  if you like to help other users or want to give credit! (Or even suggest a new effect you think FuzzyQuills could do. There are lots of suggestions being posted all the time)
 Coming soon:
 Various bloom fx, to spruce up scenes. Thanks to FrostBite23 for offering to port them!
 Sun shafts effect. Again, thank Frosty!
 Cyrien5100, for helping out with SSAO. FrostBite23 now has a new SSAO coming as well.
 
 Credits:
+
+
 Main Project Lead: FuzzyQuills
 
 Color Balance Script provided by Tryder.
