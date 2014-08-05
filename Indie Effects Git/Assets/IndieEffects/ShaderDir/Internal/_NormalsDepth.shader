@@ -1,4 +1,4 @@
-﻿Shader "IndieEffects/DepthNormalTexture" {
+Shader "IndieEffects/DepthNormalTexture" {
 Properties {
 	_MainTex ("", 2D) = "white" {}
 	_Cutoff ("", Float) = 0.5
@@ -63,7 +63,7 @@ uniform fixed4 _Color;
 fixed4 frag(v2f i) : COLOR {
 	fixed4 texcol = tex2D( _MainTex, i.uv );
 	clip( texcol.a*_Color.a - _Cutoff );
-	return EncodeDepthNormal (i.nz.w, i.nz.xyz), texcol;
+	return EncodeDepthNormal (i.nz.w, i.nz.xyz);
 }
 
 ENDCG
