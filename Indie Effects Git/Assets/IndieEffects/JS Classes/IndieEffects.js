@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 /*
 ----------Indie Effects Base----------
 This is the base for all other image effects to occur. Includes depth texture generation
@@ -17,10 +17,6 @@ var DNRequire : boolean;
 var DepthCam : GameObject;
 @Range(0,0.04)
 var latency : float;
-
-var useOldVersion : boolean; //enable old rendering method
-var myCamera : Camera; //cache camera and transform component for 
-private var myTransform : Transform; //performance
 
 static function FullScreenQuad(renderMat : Material) {
 	GL.PushMatrix();
@@ -80,8 +76,6 @@ var prevRect : Rect;
 var asp : float;
 var dom : GameObject;
 function OnPreRender () {
-	if( !useOldVersion ){
-		
 	asp = camera.pixelWidth/camera.pixelHeight;
 	if (!DepthCam){
 		DepthCam = new GameObject("DepthCamera",Camera);
@@ -112,47 +106,9 @@ function OnPreRender () {
 		RT.ReadPixels(Rect(camera.pixelRect.x,camera.pixelRect.y,textureSize,textureSize), 0, 0);
 		RT.Apply();
 	}
-	
-	}
-}
-
-function OnPostRender() {
-	if( useOldVersion ) {		
-		if( DNRequire ) {
-			//DN-Texture generation not ready
-			if (!DepthCam){
-				DepthCam = new GameObject("DepthCamera",Camera);
-				DepthCam.camera.CopyFrom(myCamera);
-				DepthCam.camera.depth = myCamera.depth-2;
-			}
-
-			DepthCam.transform.position = myTransform.position;
-			DepthCam.transform.rotation = myTransform.rotation;
-			DepthCam.camera.SetReplacementShader(DepthShader, "RenderType");
-			DepthCam.camera.aspect = myCamera.aspect;
-			DepthCam.camera.pixelRect = myCamera.pixelRect;
-			DepthCam.camera.Render();
-			DNBuffer.Resize(myCamera.pixelWidth, myCamera.pixelHeight, TextureFormat.RGB24, false);
-			DNBuffer.ReadPixels(myCamera.pixelRect, 0, 0);
-			DNBuffer.Apply();
-		
-		}
-		RT.Resize(myCamera.pixelWidth, myCamera.pixelHeight, TextureFormat.RGB24, false);
-		RT.ReadPixels(myCamera.pixelRect, 0, 0);
-	   
-		RT.Apply();	
-	}
 }
 
 function Start () {
-	
-	myTransform = transform;
-	myCamera = GetComponent(Camera);
-	
-	
-	
-	if( !useOldVersion ){
-		
 	capture = true;
 	RT = new Texture2D(textureSize, textureSize, TextureFormat.RGB24, false);
 	RT.wrapMode = TextureWrapMode.Clamp;
@@ -161,14 +117,5 @@ function Start () {
 	while(true) {
 		capture = true;
 		yield WaitForSeconds(latency);
-	}
-	
-	} else {
-		//old approuch
-		//possible for splitscreen too
-		RT = new Texture2D(myCamera.pixelWidth, myCamera.pixelHeight, TextureFormat.RGB24, false);
-		//RT.wrapMode = TextureWrapMode.Clamp;
-		DNBuffer = new Texture2D(myCamera.pixelWidth, myCamera.pixelHeight, TextureFormat.ARGB32, false);
-		
 	}
 }
