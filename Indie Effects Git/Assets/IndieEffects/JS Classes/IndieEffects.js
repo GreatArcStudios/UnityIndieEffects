@@ -113,13 +113,9 @@ function OnPreRender () {
 		RT.Apply();
 	}
 	
-	}
-}
-
-function OnPostRender() {
-	if( useOldVersion ) {		
+	} else {
 		if( DNRequire ) {
-			//DN-Texture generation not ready
+			//for old rendering method
 			if (!DepthCam){
 				DepthCam = new GameObject("DepthCamera",Camera);
 				DepthCam.camera.CopyFrom(myCamera);
@@ -137,6 +133,12 @@ function OnPostRender() {
 			DNBuffer.Apply();
 		
 		}
+		
+	}
+}
+
+function OnPostRender() {
+	if( useOldVersion ) {		
 		RT.Resize(myCamera.pixelWidth, myCamera.pixelHeight, TextureFormat.RGB24, false);
 		RT.ReadPixels(myCamera.pixelRect, 0, 0);
 	   
