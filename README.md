@@ -60,7 +60,7 @@ Javascript example:
 ```
 C# example:
 
-<i> note the c# version still needs to be ported.</i>
+<b> C# version is ported </b> 
 ```csharp
 
   using IndieEffects;
