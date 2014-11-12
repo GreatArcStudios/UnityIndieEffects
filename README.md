@@ -1,5 +1,5 @@
 <h1> Unity Indie Effects </h1>
-
+[![Build Status](https://travis-ci.org/GreatArcStudios/UnityIndieEffects.svg)](https://travis-ci.org/GreatArcStudios/UnityIndieEffects)
 ![iFx](http://i.imgur.com/0VxIOeL.png "iFx")
 
 <h2> <b>True Image Effects for Unity free</b> </h2>
