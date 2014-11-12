@@ -1,5 +1,5 @@
 <h1> Unity Indie Effects </h1>
-[![Build Status](https://travis-ci.org/GreatArcStudios/UnityIndieEffects.svg)](https://travis-ci.org/GreatArcStudios/UnityIndieEffects)
+
 ![iFx](http://i.imgur.com/0VxIOeL.png "iFx")
 
 <h2> <b>True Image Effects for Unity free</b> </h2>
@@ -8,7 +8,7 @@
 <h4><b>Welcome!</b></h4> <p> This here is <b><i><u>the</u></i></b> Indie Effects pack, one of the <b><u>only free</u></b> ways of getting image effects in Unity free. With this epic pack, you can do fisheye lensing, motion blur, bloom and lighting FX, SSAO, vignetting, chromatic aberration, radial blur, and an easy to use API to code your own FX!
 But where’s the motion blur you ask? Unfortunately, an improvement in performance came at the cost of breaking the original motion blur, so for now, there is none. I am working on a camera-based solution that uses motion vectors instead.</p> 
 <hr>
-<b>Basic Setup and Use in Unity Free:</b>
+<b>Basic Setup and Use in Unity Free:</b>[![Build Status](https://travis-ci.org/GreatArcStudios/UnityIndieEffects.svg)](https://travis-ci.org/GreatArcStudios/UnityIndieEffects)
 
 Here are the basic setup steps. Unlike previous versions, it isn’t as fiddly as it was anymore! Now, let’s get started:
 <ul>
