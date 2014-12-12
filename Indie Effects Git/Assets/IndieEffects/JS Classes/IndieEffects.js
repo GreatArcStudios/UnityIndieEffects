@@ -147,7 +147,25 @@ function OnPostRender() {
 }
 
 function Start () {
-	
+	int viewportMinSize = System.Convert.ToInt32(Mathf.Min (myCamera.pixelHeight,myCamera.pixelWidth));
+        if(textureSize>viewportMinSize)
+        {
+            //Debug.Log("Texture size "+ viewportMinSize);
+            // Get nearest lower log 2
+            // http://graphics.stanford.edu/~seander/bithacks.html#IntegerLogObvious
+            int r = 0;
+            while ((viewportMinSize >>=1) != 0)
+            {
+                r++;
+            }
+            viewportMinSize= 1<<r;
+            //Debug.Log("Texture size "+ viewportMinSize);
+            textureSize = viewportMinSize;
+        }
+        else{
+            Debug.Log("Viewport min size"+ viewportMinSize + " Texture size "+textureSize);
+           
+        }
 	myTransform = transform;
 	myCamera = GetComponent(Camera);
 	
